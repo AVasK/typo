@@ -1,11 +1,14 @@
 # Typo
 A tiny single-header lib to get the type name in a human-readable form
 
-> Tested with recent enough versions of
-- GCC
-- Clang
-- MSVC
-- ICC
+![badge.cpp](https://img.shields.io/badge/C%2B%2B-14-green)
+![badge.cpp](https://img.shields.io/badge/C%2B%2B-17-green)
+![badge.cpp](https://img.shields.io/badge/C%2B%2B-20-green)
+
+![badge.compiler](https://img.shields.io/badge/gcc-+-green)
+![badge.compiler](https://img.shields.io/badge/clang-+-green)
+![badge.compiler](https://img.shields.io/badge/msvc-+-green)
+![badge.compiler](https://img.shields.io/badge/icc-+-green)
 
 > type parsing is consteval since C++20, constexpr since C++14.
 
