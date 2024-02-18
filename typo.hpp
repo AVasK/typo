@@ -11,7 +11,7 @@
 #endif
 
 #if __has_include(<source_location>) &&\
-        __cplusplus >= __cpp_lib_source_location 
+        defined(__cpp_lib_source_location) && __cplusplus >= __cpp_lib_source_location
 #   include <source_location>
 #endif
 
@@ -128,7 +128,7 @@ constexpr size_t slen(const char (&) [N]) {
 template <typename T>
 inline const char * pretty_name () noexcept {
     #if __has_include(<source_location>) &&\
-        __cplusplus >= __cpp_lib_source_location 
+        defined(__cpp_lib_source_location) && __cplusplus >= __cpp_lib_source_location
     return std::source_location::current().function_name();
     #else
     return PRETTY_FUNC;
